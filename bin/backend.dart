@@ -1,9 +1,14 @@
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as shelf_io;
 
+import 'server_handler.dart';
+
 void main() async {
+
+  var _server = ServerH();
+
   final server = await shelf_io.serve(
-    (request) => Response(200, body: 'ok'),
+    _server.handler,
     'localhost',
     8080,
   );
