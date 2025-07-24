@@ -1,7 +1,7 @@
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as shelf_io;
 
-import 'server_handler.dart';
+import 'package:backend/server_handler.dart';
 
 void main() async {
 
